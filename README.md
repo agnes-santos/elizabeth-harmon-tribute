@@ -8,8 +8,8 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 - [x] #2: An element with a corresponding `id="title"`, which contains a string that describes the subject of the tribute page
 - [x] #3: `div` element with a corresponding `id="img-div"`
 - [x] #4: Within the `img-div` element, an `img` element with a corresponding `id="image"`
-- [ ] #5: Within the `img-div` element, an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`
-- [ ] #6: An element with a corresponding `id="tribute-info"`, which contains textual content describing the subject
+- [x] #5: Within the `img-div` element, an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`
+- [x] #6: An element with a corresponding `id="tribute-info"`, which contains textual content describing the subject
 - [ ] #7: An `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page
 - [ ] #8: `img` element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 - [ ] #9: `img` element should be centered within its parent element
@@ -81,6 +81,21 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
         </figcaption>
     </figure>
     </div>
+```
+
+### #6: An element with a corresponding `id="tribute-info"`, which contains textual content describing the subject
+
+![image](https://user-images.githubusercontent.com/22828458/98636313-9398da00-2361-11eb-8834-6456cfb7614e.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98636335-9b587e80-2361-11eb-9fc9-d9db297278a2.png)
+
+```
+<article id="tribute-info">
+    <p>
+        Elizabeth "Beth" Harmon is a chess prodigy and the main character in
+        the Netflix miniseries, The Queen's Gambit.
+    </p>
+</article>
 ```
 
 ## Running Tests Locally
