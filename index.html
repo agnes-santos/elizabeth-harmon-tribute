@@ -5,42 +5,363 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elizabeth Harmon</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat");
+
+      body {
+        font-family: Montserrat, sans-serif;
+        background-color: #18353a;
+        color: #18353a;
+      }
+
+      #main {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      #tribute-info {
+        background-color: #f9ffff;
+        margin: 20px 20px 40px 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: Cinzel, serif;
+        color: #83051e;
+        margin: 10px;
+      }
+
+      h1 strong {
+        color: #18353a;
+      }
+
+      figure {
+        margin: 10px;
+        padding: 2px;
+        background-color: #f9ffff;
+        clip-path: circle(35%);
+      }
+
+      /*  Connects the img to the timeline */
+      #img-div {
+        margin-bottom: -11px;
+      }
+
       img {
+        max-height: 450px;
+        clip-path: circle(34%);
         max-width: 100%;
         height: auto;
         display: block;
         margin: auto;
       }
+
+      figcaption {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        top: auto;
+        overflow: hidden;
+      }
+
+      /* Based on Timeline CSS from https://www.w3schools.com/howto/howto_css_timeline.asp */
+      #tribute-timeline {
+        position: relative;
+        margin: 0 auto;
+        padding: 30px 20px 0px 20px;
+      }
+
+      /* Vertical timeline line */
+      #img-div::before,
+      #tribute-timeline::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        background-color: #f9ffff;
+        top: 0px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        z-index: -1;
+      }
+
+      /* Removes the timeline from the top of the page to tribute-info */
+      #img-div::before {
+        top: 20px;
+      }
+
+      .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 40%;
+      }
+
+      /* Circles in the timeline */
+      .container::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        background-color: #83051e;
+        border: 4px solid #f9ffff;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      /* Fix the circle for containers on the right side */
+      .right::after {
+        left: -6px;
+      }
+
+      .left {
+        left: 0;
+      }
+
+      /* Add arrows to the left container (pointing right) */
+      .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid #f9ffff;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+      }
+
+      .right {
+        right: -49%;
+      }
+
+      /* Add arrows to the right container (pointing left) */
+      .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid #f9ffff;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+      .card {
+        padding: 10px 20px;
+        background-color: #f9ffff;
+        position: relative;
+        border-radius: 6px;
+      }
+
+      h2 {
+        color: #83051e;
+      }
+
+      #tribute-link {
+        font-weight: bolder;
+        color: #83051e;
+        text-decoration: none;
+      }
+      /* Responsive Timeline  */
+      @media screen and (max-width: 815px) {
+        /* Place the timelime to the left */
+        #img-div::before {
+          left: 39px;
+        }
+        #tribute-timeline::after {
+          left: 31px;
+        }
+
+        /* Full-width containers */
+        .container {
+          width: 85%;
+          padding-left: 60px;
+          padding-right: 25px;
+        }
+
+        /* Make sure that all arrows are pointing leftwards */
+        figure::before,
+        .container::before {
+          left: 50px;
+          border: medium solid #f9ffff;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent #f9ffff transparent transparent;
+        }
+
+        /* Make sure all circles are at the same spot */
+        .left::after,
+        .right::after {
+          left: -3px;
+        }
+
+        /* Make all right containers behave like the left ones */
+        .right {
+          left: 0%;
+        }
+      }
     </style>
   </head>
   <body>
     <main id="main">
-      <h1 id="title">Elizabeth Harmon</h1>
-      <div id="img-div">
-        <figure>
-          <img
-            id="image"
-            src="https://decider.com/wp-content/uploads/2020/10/queens-gambit-2.jpg"
-            alt="Elizabeth Harmon"
-          />
-          <figcaption id="img-caption">
-            Elizabeth Harmon in the Mexico City Invitational Chess
-          </figcaption>
-        </figure>
-      </div>
-      <article id="tribute-info">
+      <div id="tribute-info">
+        <h1 id="title">Eliza<strong>beth</strong> Harmon</h1>
         <p>
           Elizabeth "Beth" Harmon is a chess prodigy and the main character in
           the Netflix miniseries, The Queen's Gambit.
         </p>
-        <a
-          id="tribute-link"
-          href="https://the-queens-gambit.fandom.com/wiki/Beth_Harmon#Biography"
-          target="_blank"
-        >
-          Know more about Beth Harmon
-        </a>
-      </article>
+        <p>
+          Information below contains spoilers and are sourced from the
+          <a
+            id="tribute-link"
+            href="https://the-queens-gambit.fandom.com/wiki/Beth_Harmon#Biography"
+            target="_blank"
+          >
+            Beth Harmon page at The Queen's Gambit Wiki</a
+          >.
+        </p>
+      </div>
+      <div id="img-div">
+        <figure>
+          <img
+            id="image"
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-11-04-at-3-26-07-pm-1604504298.png"
+            alt="Elizabeth Harmon at a Russian chess park"
+          />
+          <figcaption id="img-caption">
+            Elizabeth Harmon at a Russian chess park
+          </figcaption>
+        </figure>
+      </div>
+
+      <section id="tribute-timeline">
+        <div class="container right">
+          <div class="card">
+            <h2>November 2, 1948</h2>
+            <p>Elizabeth Harmon was born to Alice and Paul Harmon</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="card">
+            <h2>1953</h2>
+            <p>
+              Her father officially gave up on trying to see her since Alice had
+              kept "running away". Harmon realizes that her mother had taken the
+              same vitamins, Librium
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="card">
+            <h2>July 25th, 1957</h2>
+            <p>
+              Beth is sent to Methuen Home, an exclusively-female Christian
+              orphanage, after her mother died in a traffic collision.
+            </p>
+            <p>
+              She meets Jolene and became close friends through mutual
+              admiration and understanding of each other.
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="card">
+            <h2>1957</h2>
+            <p>
+              Beth began learning chess after noticing orphanage's custodian,
+              Mr. Shaibel, playing alone, whereby she became fascinated with the
+              checkered pattern of the eight-by-eight grid.
+            </p>
+            <p>
+              Mr. Shaibel later on brings Mr. Ganz, the head of two local chess
+              clubs, into the basement to face-off against Harmon. After she
+              defeats both of them after several games, even simultaneously, Mr.
+              Ganz photographs Beth next to Mr. Shaibel to show her off to the
+              local chess club.
+            </p>
+            <p>
+              Beth is invited by Mr. Ganz to play against the local chess team
+              and bests the 12 players in a little over 80 minutes
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="card">
+            <h2>1963</h2>
+            <p>
+              Beth is adopted by the Wheatley family and plays her first
+              tournament after asking Mr. Shaibel to invest in her entrance fee.
+            </p>
+            <p>
+              She went on to win in the Cincinnati, Pittsburgh and Houston
+              Tournaments
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="card">
+            <h2>1966</h2>
+            <p>
+              Beth loses to Benny Watts in the US Championship and is dubbed the
+              US Co-Champion.
+            </p>
+            <p>
+              She befriends her Russian language classmates and experienced
+              being a teenager attending the party.
+            </p>
+            <p>
+              Beth graduated from Fairfield High School and received a Bulova
+              gift from her mother.
+            </p>
+            <p>
+              She loses against Vasily Borgov in Mexico City Invitational Chess
+              Tournament, and her mother dies in questionable causes. Harry
+              helps her cope with grief through attempting to teach her chess
+              but eventually parted.
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="card">
+            <h2>1967</h2>
+            <p>
+              Beth wins against Benny in the Ohio US Championship after
+              identifying further weaknesses in her play and train together for
+              her international career growth in New York.
+            </p>
+            <p>
+              In the Paris Remy-Vallon Invitational, Harmon is prepared to face
+              off against Borgov once more, but she is held back by relapsing
+              the night before. She gradually spirals into her addictions and
+              even fleding before the Kentucy State Championship tournament,
+              forfeiting her title.
+            </p>
+            <p></p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="card">
+            <h2>1968</h2>
+            <p>
+              Jolene appears on Beth's doorstep to attend Mr. Shaibel's funeral.
+              Both talk about their lives and future through adult lenses.
+              Jolene finances Beth's trip to Moscow out of her own pocket.
+            </p>
+            <p>
+              Beth wins against seven Russian Grandmasters in the Moscow
+              Invitational. She leaves to play chess in a public park.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

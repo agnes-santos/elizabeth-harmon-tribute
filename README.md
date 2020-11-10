@@ -1,6 +1,10 @@
 # elizabeth-harmon-tribute
 
-A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsive Web Design Projects - Tribute Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) that must fulfill the user stories.
+https://agnes-nuguid.github.io/elizabeth-harmon-tribute/
+
+![image](https://user-images.githubusercontent.com/22828458/98685492-63bdf680-23a2-11eb-9f3c-a8e902361404.png)
+
+A tribute to the great Elizabeth Harmon, a project from the [FreeCodeCamp Responsive Web Design Projects - Tribute Page](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) that must fulfill the user stories.
 
 ## User Stories:
 
