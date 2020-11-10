@@ -7,7 +7,7 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 - [x] #1: An element with a corresponding `id="main"`, which contains all other elements
 - [x] #2: An element with a corresponding `id="title"`, which contains a string that describes the subject of the tribute page
 - [x] #3: `div` element with a corresponding `id="img-div"`
-- [ ] #4: Within the `img-div` element, an `img` element with a corresponding `id="image"`
+- [x] #4: Within the `img-div` element, an `img` element with a corresponding `id="image"`
 - [ ] #5: Within the `img-div` element, an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`
 - [ ] #6: An element with a corresponding `id="tribute-info"`, which contains textual content describing the subject
 - [ ] #7: An `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page
@@ -44,6 +44,22 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 
 ```
 <div id="img-div"></div>
+```
+
+### #4: Within the `img-div` element, an `img` element with a corresponding `id="image"`
+
+![image](https://user-images.githubusercontent.com/22828458/98631829-37ca5300-2359-11eb-865e-9e432d1eb21b.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98631865-46b10580-2359-11eb-858d-cfb9c91f7919.png)
+
+```
+<div id="img-div">
+    <img
+        id="image"
+        src="https://decider.com/wp-content/uploads/2020/10/queens-gambit-2.jpg"
+        alt="Elizabeth Harmon"
+    />
+</div>
 ```
 
 ## Running Tests Locally
