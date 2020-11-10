@@ -11,7 +11,7 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 - [x] #5: Within the `img-div` element, an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`
 - [x] #6: An element with a corresponding `id="tribute-info"`, which contains textual content describing the subject
 - [x] #7: An `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page
-- [ ] #8: `img` element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+- [x] #8: `img` element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 - [ ] #9: `img` element should be centered within its parent element
 
 ## Solutions
@@ -112,6 +112,22 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 >
     Know more about Beth Harmon
 </a>
+```
+
+### #8: `img` element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+
+![image](https://user-images.githubusercontent.com/22828458/98637369-4cabe400-2363-11eb-9db8-fb4b4e1227c5.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98637400-56cde280-2363-11eb-905e-d15d3d8c33e9.png)
+
+```
+    <style>
+        img {
+        max-width: 100%;
+        height: auto;
+        }
+    </style>
+</head>
 ```
 
 ## Running Tests Locally
