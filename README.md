@@ -12,7 +12,7 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 - [x] #6: An element with a corresponding `id="tribute-info"`, which contains textual content describing the subject
 - [x] #7: An `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page
 - [x] #8: `img` element should responsively resize, relative to the width of its parent element, without exceeding its original size.
-- [ ] #9: `img` element should be centered within its parent element
+- [x] #9: `img` element should be centered within its parent element
 
 ## Solutions
 
@@ -128,6 +128,23 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
         }
     </style>
 </head>
+```
+
+### #9: `img` element should be centered within its parent element
+
+![image](https://user-images.githubusercontent.com/22828458/98640572-36068c80-2365-11eb-8c23-5d45d4c14f3d.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98640596-43237b80-2365-11eb-9f6e-ee49cf1fcab5.png)
+
+```
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+</style>
 ```
 
 ## Running Tests Locally
