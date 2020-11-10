@@ -10,7 +10,7 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 - [x] #4: Within the `img-div` element, an `img` element with a corresponding `id="image"`
 - [x] #5: Within the `img-div` element, an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`
 - [x] #6: An element with a corresponding `id="tribute-info"`, which contains textual content describing the subject
-- [ ] #7: An `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page
+- [x] #7: An `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page
 - [ ] #8: `img` element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 - [ ] #9: `img` element should be centered within its parent element
 
@@ -96,6 +96,22 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
         the Netflix miniseries, The Queen's Gambit.
     </p>
 </article>
+```
+
+### #7: An `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page
+
+![image](https://user-images.githubusercontent.com/22828458/98636772-744e7c80-2362-11eb-8685-4a76b1242bd9.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98636794-7d3f4e00-2362-11eb-92d3-25fc5571c979.png)
+
+```
+<a
+    id="tribute-link"
+    href="https://the-queens-gambit.fandom.com/wiki/Beth_Harmon#Biography"
+    target="_blank"
+>
+    Know more about Beth Harmon
+</a>
 ```
 
 ## Running Tests Locally
