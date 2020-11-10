@@ -4,7 +4,7 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 
 ## User Stories:
 
-- [ ] #1: An element with a corresponding `id="main"`, which contains all other elements.
+- [x] #1: [An element with a corresponding `id="main"`, which contains all other elements](#1-an-element-with-a-corresponding-id-main-which-contains-all-other-elements)
 - [ ] #2: An element with a corresponding `id="title"`, which contains a string that describes the subject of the tribute page
 - [ ] #3: `div` element with a corresponding `id="img-div"`
 - [ ] #4: Within the `img-div` element, an `img` element with a corresponding `id="image"`
@@ -13,6 +13,18 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 - [ ] #7: An `a` element with a corresponding `id="tribute-link"`, which links to an outside site that contains additional information about the subject of the tribute page
 - [ ] #8: `img` element should responsively resize, relative to the width of its parent element, without exceeding its original size.
 - [ ] #9: `img` element should be centered within its parent element
+
+## Solutions
+
+### #1: An element with a corresponding `id="main"`, which contains all other elements.
+
+![image](https://user-images.githubusercontent.com/22828458/98626219-2a5a9c00-234c-11eb-8082-c4839782516e.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98626238-3a727b80-234c-11eb-931f-5cb035445d94.png)
+
+```
+<main id="main"><h1>Tribute Page</h1></main>
+```
 
 ## Running Tests Locally
 
