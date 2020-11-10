@@ -4,8 +4,8 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 
 ## User Stories:
 
-- [x] #1: [An element with a corresponding `id="main"`, which contains all other elements](#1-an-element-with-a-corresponding-id-main-which-contains-all-other-elements)
-- [ ] #2: An element with a corresponding `id="title"`, which contains a string that describes the subject of the tribute page
+- [x] #1: An element with a corresponding `id="main"`, which contains all other elements
+- [x] #2: An element with a corresponding `id="title"`, which contains a string that describes the subject of the tribute page
 - [ ] #3: `div` element with a corresponding `id="img-div"`
 - [ ] #4: Within the `img-div` element, an `img` element with a corresponding `id="image"`
 - [ ] #5: Within the `img-div` element, an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`
@@ -24,6 +24,16 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 
 ```
 <main id="main"><h1>Tribute Page</h1></main>
+```
+
+### #2: An element with a corresponding `id="title"`, which contains a string that describes the subject of the tribute page
+
+![image](https://user-images.githubusercontent.com/22828458/98628829-68f35500-2352-11eb-92f5-d877e18ed2d5.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98628846-70b2f980-2352-11eb-83bf-33b4bd416ba2.png)
+
+```
+<h1 id="title">Elizabeth Harmon</h1>
 ```
 
 ## Running Tests Locally
