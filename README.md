@@ -6,7 +6,7 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 
 - [x] #1: An element with a corresponding `id="main"`, which contains all other elements
 - [x] #2: An element with a corresponding `id="title"`, which contains a string that describes the subject of the tribute page
-- [ ] #3: `div` element with a corresponding `id="img-div"`
+- [x] #3: `div` element with a corresponding `id="img-div"`
 - [ ] #4: Within the `img-div` element, an `img` element with a corresponding `id="image"`
 - [ ] #5: Within the `img-div` element, an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`
 - [ ] #6: An element with a corresponding `id="tribute-info"`, which contains textual content describing the subject
@@ -34,6 +34,16 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 
 ```
 <h1 id="title">Elizabeth Harmon</h1>
+```
+
+### #3: `div` element with a corresponding `id="img-div"`
+
+![image](https://user-images.githubusercontent.com/22828458/98631447-6dbb0780-2358-11eb-863e-ee562fd850db.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98631464-77dd0600-2358-11eb-9e32-f653de48b33a.png)
+
+```
+<div id="img-div"></div>
 ```
 
 ## Running Tests Locally
