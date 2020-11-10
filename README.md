@@ -62,6 +62,27 @@ A tribute to the great Elizabeth Harmon project from the [FreeCodeCamp Responsiv
 </div>
 ```
 
+### #5: Within the `img-div` element, an element with a corresponding `id="img-caption"` that contains textual content describing the image shown in `img-div`
+
+![image](https://user-images.githubusercontent.com/22828458/98632542-a825a400-235a-11eb-883e-73da5b07e6f1.png)
+
+![image](https://user-images.githubusercontent.com/22828458/98632556-b07ddf00-235a-11eb-8aea-790fb8820e7a.png)
+
+```
+<div id="img-div">
+    <figure>
+        <img
+        id="image"
+        src="https://decider.com/wp-content/uploads/2020/10/queens-gambit-2.jpg"
+        alt="Elizabeth Harmon"
+        />
+        <figcaption id="img-caption">
+        Elizabeth Harmon in the Mexico City Invitational Chess
+        </figcaption>
+    </figure>
+    </div>
+```
+
 ## Running Tests Locally
 
 Add the [CDN link](https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js) just above the `</body>` tag:
