@@ -116,6 +116,12 @@ h2 {
   /* Positions the circle */
   position: absolute;
   top: 15px;
+}
+
+.dots,
+.fa,
+.far,
+.fas {
   /* positions the icons */
   display: flex;
   justify-content: center;
@@ -131,6 +137,7 @@ figure {
   /* Centers img inside */
   margin: auto;
   /* Image circular border */
+  background: #f9ffff;
   background: var(--white);
   padding: 5px;
   border-radius: 50%;
@@ -182,6 +189,7 @@ figcaption {
     /* Offset the border thickness */
     left: 10px;
   }
+
   .dots {
     left: -62px;
   }
