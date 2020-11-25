@@ -22,6 +22,8 @@ body {
 }
 
 #main {
+  /* For ie11 support */
+  display: block;
   /* important for children */
   position: relative;
   /* Space for the vertical line */
@@ -101,10 +103,8 @@ h2 {
 /* circles */
 .dots {
   /* Forms the circle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
   content: "";
+  background: #83051e;
   background: var(--red);
   height: 30px;
   width: 30px;
@@ -116,6 +116,10 @@ h2 {
   /* Positions the circle */
   position: absolute;
   top: 15px;
+  /* positions the icons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #img-div {
