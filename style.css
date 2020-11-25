@@ -122,10 +122,9 @@ h2 {
 .fa,
 .far,
 .fas {
-  /* positions the icons */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* Centers the icons */
+  line-height: 30px;
+  text-align: center;
 }
 
 #img-div {
