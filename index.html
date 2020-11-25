@@ -3,225 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elizabeth Harmon</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat");
-
-      body {
-        font-family: Montserrat, sans-serif;
-        background-color: #18353a;
-        color: #18353a;
-      }
-
-      #main {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      #tribute-info {
-        background-color: #f9ffff;
-        margin: 20px 20px 40px 20px;
-        padding: 10px 20px;
-        border-radius: 10px;
-        text-align: center;
-      }
-
-      h1 {
-        font-family: Cinzel, serif;
-        color: #83051e;
-        margin: 10px;
-      }
-
-      h1 strong {
-        color: #18353a;
-      }
-
-      figure {
-        margin: 10px;
-        padding: 2px;
-        background-color: #f9ffff;
-        clip-path: circle(35%);
-      }
-
-      /*  Connects the img to the timeline */
-      #img-div {
-        margin-bottom: -11px;
-      }
-
-      img {
-        max-height: 450px;
-        clip-path: circle(34%);
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-      }
-
-      figcaption {
-        position: absolute;
-        left: -10000px;
-        width: 1px;
-        height: 1px;
-        top: auto;
-        overflow: hidden;
-      }
-
-      /* Based on Timeline CSS from https://www.w3schools.com/howto/howto_css_timeline.asp */
-      #tribute-timeline {
-        position: relative;
-        margin: 0 auto;
-        padding: 30px 20px 0px 20px;
-      }
-
-      /* Vertical timeline line */
-      #img-div::before,
-      #tribute-timeline::after {
-        content: "";
-        position: absolute;
-        width: 6px;
-        background-color: #f9ffff;
-        top: 0px;
-        bottom: 330px;
-        left: 50%;
-        margin-left: -3px;
-        z-index: -1;
-      }
-
-      /* Removes the timeline from the top of the page to tribute-info */
-      #img-div::before {
-        top: 20px;
-      }
-
-      .container {
-        padding: 10px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 40%;
-      }
-
-      /* Circles in the timeline */
-      .container::after {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        right: -10px;
-        background-color: #83051e;
-        border: 4px solid #f9ffff;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 1;
-      }
-
-      /* Fix the circle for containers on the right side */
-      .right::after {
-        left: -6px;
-      }
-
-      .left {
-        left: 0;
-      }
-
-      /* Add arrows to the left container (pointing right) */
-      .left::before {
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 22px;
-        width: 0;
-        z-index: 1;
-        right: 30px;
-        border: medium solid #f9ffff;
-        border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent white;
-      }
-
-      .right {
-        right: -49%;
-      }
-
-      /* Add arrows to the right container (pointing left) */
-      .right::before {
-        content: " ";
-        height: 0;
-        position: absolute;
-        top: 22px;
-        width: 0;
-        z-index: 1;
-        left: 30px;
-        border: medium solid #f9ffff;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-      }
-
-      .card {
-        padding: 10px 20px;
-        background-color: #f9ffff;
-        position: relative;
-        border-radius: 6px;
-      }
-
-      h2 {
-        color: #83051e;
-      }
-
-      #tribute-link {
-        font-weight: bolder;
-        color: #83051e;
-        text-decoration: none;
-      }
-      /* Responsive Timeline  */
-      @media screen and (max-width: 815px) {
-        /* Place the timelime to the left */
-        #img-div::before {
-          left: 39px;
-          bottom: 0px;
-        }
-        #tribute-timeline::after {
-          left: 31px;
-          bottom: 250px;
-        }
-
-        /* Full-width containers */
-        .container {
-          width: 85%;
-          padding-left: 60px;
-          padding-right: 25px;
-        }
-
-        /* Make sure that all arrows are pointing leftwards */
-        figure::before,
-        .container::before {
-          left: 50px;
-          border: medium solid #f9ffff;
-          border-width: 10px 10px 10px 0;
-          border-color: transparent #f9ffff transparent transparent;
-        }
-
-        /* Make sure all circles are at the same spot */
-        .left::after,
-        .right::after {
-          left: -3px;
-        }
-
-        /* Make all right containers behave like the left ones */
-        .right {
-          left: 0%;
-        }
-      }
-    </style>
+    <title>Beth Harmon</title>
+    <script
+      src="https://kit.fontawesome.com/9066ce696c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <main id="main">
-      <div id="tribute-info">
-        <h1 id="title">Eliza<strong>beth</strong> Harmon</h1>
+      <div id="title" class="card">
+        <i class="dots fas fa-quote-left"></i>
+        <blockquote>
+          "It’s much easier to play chess without the burden of an Adam’s
+          apple."
+        </blockquote>
+        <h1>Eliza<strong>beth</strong> Harmon</h1>
+      </div>
+      <div id="img-div">
+        <i class="dots fas fa-camera"></i>
+        <figure>
+          <img
+            id="image"
+            src="https://cdn.theatlantic.com/assets/marketing/prod/images/2020/10/QueensGambit_1x1_Main_RGB.jpg"
+            alt="Elizabeth Harmon facing forward behind a chessboard"
+          />
+          <figcaption id="img-caption">
+            Elizabeth Harmon facing forward behind a chessboard
+          </figcaption>
+        </figure>
+      </div>
+      <div id="tribute-info" class="card">
+        <i class="dots fas fa-info"></i>
         <p>
           Elizabeth "Beth" Harmon is a chess prodigy and the main character in
           the Netflix miniseries, The Queen's Gambit.
         </p>
         <p>
-          Information below contains spoilers and are sourced from the
+          Information below contains spoilers and are sourced from the <br />
           <a
             id="tribute-link"
             href="https://the-queens-gambit.fandom.com/wiki/Beth_Harmon#Biography"
@@ -231,38 +50,28 @@
           >.
         </p>
       </div>
-      <div id="img-div">
-        <figure>
-          <img
-            id="image"
-            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2020-11-04-at-3-26-07-pm-1604504298.png"
-            alt="Elizabeth Harmon at a Russian chess park"
-          />
-          <figcaption id="img-caption">
-            Elizabeth Harmon at a Russian chess park
-          </figcaption>
-        </figure>
-      </div>
-
-      <section id="tribute-timeline">
-        <div class="container right">
+      <section id="history">
+        <div class="wrapper">
           <div class="card">
+            <i class="dots fas fa-birthday-cake"></i>
             <h2>November 2, 1948</h2>
             <p>Elizabeth Harmon was born to Alice and Paul Harmon</p>
           </div>
         </div>
-        <div class="container left">
+        <div class="wrapper">
           <div class="card">
+            <i class="dots fas fa-history"></i>
             <h2>1953</h2>
             <p>
               Her father officially gave up on trying to see her since Alice had
-              kept "running away". Harmon realizes that her mother had taken the
+              kept "running away". Beth realizes that her mother had taken the
               same vitamins, Librium
             </p>
           </div>
         </div>
-        <div class="container right">
+        <div class="wrapper">
           <div class="card">
+            <i class="dots far fa-building"></i>
             <h2>July 25th, 1957</h2>
             <p>
               Beth is sent to Methuen Home, an exclusively-female Christian
@@ -274,8 +83,9 @@
             </p>
           </div>
         </div>
-        <div class="container left">
+        <div class="wrapper">
           <div class="card">
+            <i class="dots fa fa-chess-queen"></i>
             <h2>1957</h2>
             <p>
               Beth began learning chess after noticing orphanage's custodian,
@@ -284,7 +94,7 @@
             </p>
             <p>
               Mr. Shaibel later on brings Mr. Ganz, the head of two local chess
-              clubs, into the basement to face-off against Harmon. After she
+              clubs, into the basement to face-off against Beth. After she
               defeats both of them after several games, even simultaneously, Mr.
               Ganz photographs Beth next to Mr. Shaibel to show her off to the
               local chess club.
@@ -295,72 +105,268 @@
             </p>
           </div>
         </div>
-        <div class="container right">
+        <div class="wrapper">
           <div class="card">
-            <h2>1963</h2>
+            <i class="dots fa fa-users"></i>
+            <h2>Exchanges</h2>
             <p>
-              Beth is adopted by the Wheatley family and plays her first
-              tournament after asking Mr. Shaibel to invest in her entrance fee.
-            </p>
-            <p>
-              She went on to win in the Cincinnati, Pittsburgh and Houston
-              Tournaments
+              Beth is adopted by the Wheatley family. Ms. Deardorff claims Beth
+              is 13, and Beth tries to interject to say she is 15.
             </p>
           </div>
         </div>
-        <div class="container left">
+        <div class="wrapper">
           <div class="card">
-            <h2>1966</h2>
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Kentucky State Championship (1963)</h2>
             <p>
-              Beth loses to Benny Watts in the US Championship and is dubbed the
-              US Co-Champion.
-            </p>
-            <p>
-              She befriends her Russian language classmates and experienced
-              being a teenager attending the party.
-            </p>
-            <p>
-              Beth graduated from Fairfield High School and received a Bulova
-              gift from her mother.
-            </p>
-            <p>
-              She loses against Vasily Borgov in Mexico City Invitational Chess
-              Tournament, and her mother dies in questionable causes. Harry
-              helps her cope with grief through attempting to teach her chess
-              but eventually parted.
+              Beth plays her first tournament and garners local fame. Mrs.
+              Wheatley claims she doesn't have sufficient funds to last them
+              through October which clues in Beth to ask for a job to obtain
+              chess money, and when Alma refuses, Beth writes to Shaibel
+              promising she'll pay him $10 if he gives her $5 to enter the
+              tournament.
             </p>
           </div>
         </div>
-        <div class="container right">
+        <div class="wrapper">
           <div class="card">
-            <h2>1967</h2>
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Cincinnati Tournament (1963)</h2>
             <p>
-              Beth wins against Benny in the Ohio US Championship after
-              identifying further weaknesses in her play and train together for
-              her international career growth in New York.
+              Beth discovered this tournament through Mrs. Wheatley, who
+              initially took a solely monetary interest in chess, yet she grew
+              fond of the art after watching Beth's games in this tournament. It
+              was held at the then-Gibson Hotel in Cincinnati, Ohio.
             </p>
             <p>
-              In the Paris Remy-Vallon Invitational, Harmon is prepared to face
-              off against Borgov once more, but she is held back by relapsing
-              the night before. She gradually spirals into her addictions and
-              even fleding before the Kentucy State Championship tournament,
-              forfeiting her title.
+              Beth is shown to win against National Master Rudolph as the last
+              game in the tournament.
             </p>
-            <p></p>
+            <p>
+              Beth walks away with a $327.70 profit, including $49.54 she pays
+              her mother as an agent's commission.
+            </p>
           </div>
         </div>
-        <div class="container left">
+        <div class="wrapper">
           <div class="card">
-            <h2>1968</h2>
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Pittsburgh Tournament (1963)</h2>
+            <p>
+              Played in 1963. According to a Chess Review magazine that Mrs.
+              Wheatley reads on a plane, Beth wins against an unnamed
+              Grandmaster in this tournament:
+            </p>
+            <blockquote>
+              Schoolgirl beats Grandmaster in Pittsburgh. Onlookers were amazed
+              at her youthful fine-points of strategy. She shows the assurance
+              of a player twice her age.
+            </blockquote>
+            <p>
+              Mrs. Wheatley promptly boasts that this counts as national
+              recognition, to Beth's satisfaction.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Houston Tournament (1963)</h2>
+            <p>
+              Played in December, starting on the twenty-sixth. Beth and Mrs.
+              Wheatley discuss this tournament on a plane, musing over the
+              convenience of travelling during the holidays.
+            </p>
+            <p>
+              In a Chess Review magazine, Beth is referred to as a "wunderkind",
+              meaning "wonder child" or child prodigy in German. Whether this is
+              remark from a German person (and thus international recognition)
+              is undisclosed.
+            </p>
+            <p>
+              Beth also determines that she should learn Russian during this
+              trip.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Las Vegas U.S. Open Chess Championship (1966)</h2>
+            <p>
+              Beth is shown to play three games, though it can be assumed she
+              played at least one more off-screen.
+            </p>
+            <p>
+              Beth refused to shake Benny's hands prior to their final game. She
+              lost against the Caro-Kann Defence, a noteworthy callback to their
+              disagreement on its strength in 1963.
+            </p>
+            <p>
+              The tournament was point-based; each win was one point, while each
+              draw was a half-point. A loss meant no points. Benny won all of
+              his games except two draws, whereas Beth won every game except one
+              loss. This resulted in a tie. According to a newspaper article on
+              Mr. Shaibel's wall, this was her first loss on record.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-user-graduate"></i>
+            <h2>Middle Game</h2>
+            <p>
+              Beth's Russian language classmates invite her to a party,
+              resulting in some excessive substance usage and Beth exploring
+              sex. She seems satisfied with her freedom, yet she is dissatisfied
+              with her relationships once more.
+            </p>
+            <p>
+              Beth graduates from Fairfield High School and receives a Bulova
+              watch from her mother.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Mexico City Invitational Chess Tournament (1966)</h2>
+            <p>
+              Played in 1966, sometime in June (based on when Beth graduated two
+              weeks prior). During the commentary of her games, Beth is said be
+              to be seventeen years old. It was held at the Aztec Palace.
+            </p>
+            <p>
+              Beth plays against at least two international Grandmasters; GM
+              Octavio Marenco, of Italy, and GM Vasily Borgov, of Russia. If
+              Diedrich is also a Grandmaster from Austria, or if Georgi Girev is
+              a Grandmaster of Russia, then this tournament may qualify as one
+              of FIDE's International Master or Grandmaster norms. This may be
+              evidence to Beth being a Grandmaster herself.
+            </p>
+            <p>
+              The tournament appeared to be single-elimination; any player who
+              loses is immediately eliminated from winning first prize. Beth
+              most likely won a prize for second place, yet what this is
+              monetarily is unclear.
+            </p>
+            <p>
+              Beth plays the Rossolimo against GM Borgov, attempting to throw
+              them both out of book. Inevitably unprepared and psyched out from
+              intimdation, she loses the game and the tournament.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-wine-glass-alt"></i>
+            <h2>June 1966</h2>
+            <p>
+              After the tournament, Beth loses her adoptive mother to unknown
+              causes, and she returns home to Lexington, Kentucky, to grieve and
+              to organize her finances.
+            </p>
+            <p>
+              Harry Beltik helps Beth cope with grief through attempting to
+              teach her chess. They develop an intimate relationship, but they
+              part ways inevitably, due to Harry seeking his own purpose and
+              Beth's self-destructive, sharp-minded habits.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Ohio U.S. Championship (1967)</h2>
+            <p>It was held in an unnamed, "second-rate" university in Ohio.</p>
+            <p>
+              Benny and Beth connected well after the tournament,
+              notwithstanding the fact that Beth bested Benny for the title of
+              sole U.S. Champion. Benny determines to coach Beth in preparation
+              for her international career.
+            </p>
+            <p>
+              The U.S. Championship winner was invited to the Moscow
+              Invitational as a secondary prize.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Paris Remy-Vallon Invitational (1967)</h2>
+            <p>
+              The tournament was a single-round robin event; each player plays
+              every other player once. With six players, there are five rounds
+              over the course of one round per day, plus an additional one day
+              for any adjournment.
+            </p>
+            <p>
+              Beth had a perfect winning score until her loss with GM Borgov,
+              the results of which may have been influenced by her inebriation
+              the night prior. Neither of them had any draws.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-wine-glass-alt"></i>
+            <h2>Adjournment</h2>
+            <p>
+              She gradually spirals: first by cutting her friends off, then by
+              impulse spending, and finally by collapsing into her drug and
+              alcohol addictions.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Kentucky State Championship (1967)</h2>
+            <p>It was held at Henry Clay High School in Lexington, Kentucky.</p>
+            <p>
+              Beth fled the tournament before it started, forfeiting the title
+              of Kentucky State Champion.
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-female"></i>
+            <h2>End Game</h2>
             <p>
               Jolene appears on Beth's doorstep to attend Mr. Shaibel's funeral.
               Both talk about their lives and future through adult lenses.
               Jolene finances Beth's trip to Moscow out of her own pocket.
             </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card">
+            <i class="dots fa fa-chess-queen"></i>
+            <h2>Moscow Invitational (1968)</h2>
             <p>
-              Beth wins against seven Russian Grandmasters in the Moscow
-              Invitational. She leaves to play chess in a public park.
+              Beth's performance throughout the tournament garnered her even
+              greater international fame. Her skill was continuously compared to
+              that of the chess-superpower of the Soviets.
             </p>
+            <p>
+              In her final game, Beth plays the Queen's Gambit—a queen's pawn
+              opening, which she normally does not attempt, and the namesake of
+              the Netflix series. Borgov declines with the Albin Countergambit,
+              contradicting his solid style as well. Beth replies with a
+              complete deviation from Albin theory at the time by pushing her
+              king's pawn, which transpoes them into the Queen's Gambit
+              Accepted: Central Variation, McDonnell Defence.
+            </p>
+            <p>
+              Shortly following a repeat of moves, World Champion Borgov
+              uncharacteristically offers Beth a draw, which she declines. Beth
+              pushes for the win until the very end, therein Borgov is forced to
+              resign after she queens her king's pawn.
+            </p>
+            <p>She leaves to play chess in a public park.</p>
           </div>
         </div>
       </section>
