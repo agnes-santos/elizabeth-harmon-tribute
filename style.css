@@ -118,10 +118,10 @@ h2 {
   top: 15px;
 }
 
-.dots,
-.fa,
-.far,
-.fas {
+.dots.fa,
+.dots.fa,
+.dots.far,
+.dots.fas {
   /* Centers the icons */
   line-height: 30px;
   text-align: center;
